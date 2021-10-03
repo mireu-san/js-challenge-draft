@@ -17,6 +17,7 @@ function handleLoginButton(event) {
 
 // loginForm.addEventListener("submit", handleLoginButton);
 
+/////////////////////////////////////////////// Don't know yet, but hidden css feature does not work.///////////
 function paintGreetings(username){
     greeting.innerText = `Hello ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
