@@ -5,11 +5,24 @@
     <meta charset="UTF-8" />
   </head>
   <body onload="startTime()">
-    <h1>TIME:</h1>
+    <form class="hidden" id="login-form">
+      <input 
+        required
+        maxlength="15"
+        type="text" 
+        placeholder="What is your name?" />
+      <input type="submit" value="Log in" />
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+
+      <h1>TIME:</h1>
     
     <form id="todo-form">
       <input type="text" placeholder="Input your plan to create a new to do list" required />
     </form>
+
+
+
     <ul id="todo-list">
       <!-- <li>test todo-list, li</li> -->
     </ul>
@@ -20,6 +33,7 @@
       <span></span>
       <span></span>
     </div>
+    <script src="src/app.js"></script>
     <h2 class="js-clock"></h2>
     <script src="src/clock.js"></script>
     <script src="src/background.js"></script>
